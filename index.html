@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<title>Emblemas Patrios</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="icon" href="imgs/logo_cft.ico" type="image/x-icon">
+<link rel="shortcut icon" href="imgs/logo_cft.ico" type="image/x-icon" />
+<style>
+body, html {
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
+}
+.bgimg {
+    background-position: center;
+    background-size: contain;
+    background-image: url("imgs/banner.png");
+    min-height: 75%;
+}
+.menu {
+    display: none;
+}
+.topbar{
+	width:19.66666%;
+}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<!-- <div class="w3-top"> -->
+  <!-- <div class="w3-row w3-padding w3-black"> -->
+    <!-- <div class="w3-col topbar"> -->
+      <!-- <a href="#" class="w3-button w3-block w3-black">INICIO</a> -->
+    <!-- </div> -->
+    <!-- <div class="w3-col topbar"> -->
+      <!-- <a href="#about" class="w3-button w3-block w3-black">HISTORIA</a> -->
+    <!-- </div> -->
+    <!-- <div class="w3-col topbar"> -->
+      <!-- <a href="#menu" class="w3-button w3-block w3-black">BANDERAS</a> -->
+    <!-- </div> -->
+    <!-- <div class="w3-col topbar"> -->
+      <!-- <a href="#where" class="w3-button w3-block w3-black">ESCUDOS</a> -->
+    <!-- </div> -->
+	<!-- <div class="w3-col topbar"> -->
+      <!-- <a href="#himno" class="w3-button w3-block w3-black">HIMNO</a> -->
+    <!-- </div> -->
+  <!-- </div> -->
+<!-- </div> -->
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">Emblemas<br>Patrios</span>
+  </div>
+  
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">HISTORIA</span></h5>
+    <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum.</p>
+    <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum.</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>"Cita..."</i></p>
+      <p>Citada por el Citador</p>
+    </div>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">BANDERAS</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'pVieja');" id="myLink">
+        <div class="w3-col s6 tablink">Patria Vieja</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'pNueva');">
+        <div class="w3-col s6 tablink">Transición</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'actual');">
+        <div class="w3-col s6 tablink">Actual</div>
+      </a>
+    </div>
+
+    <div id="pVieja" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Escudo Patria Vieja &nbsp;&nbsp;1812 - 1819</h5>
+      <p class="w3-text-grey">Historia...</p><br>
+    </div>
+
+    <div id="pNueva" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Escudo Transición &nbsp;&nbsp;1819 - 1832</h5>
+      <p class="w3-text-grey">Historia...</p><br>
+    </div>
+    
+    <div id="actual" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Escudo Actual &nbsp;&nbsp;1832 - Actualidad</h5>
+      <p class="w3-text-grey">Historia...</p><br>
+    </div>
+  </div>
+</div>
+
+<div class="w3-container" id="where">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">ESCUDOS</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'eVieja');" id="myLink">
+        <div class="w3-col s6 tablink">Patria Vieja</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'eNueva');">
+        <div class="w3-col s6 tablink">Patria Nueva</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'eActual');">
+        <div class="w3-col s6 tablink">Actual</div>
+      </a>
+    </div>
+
+    <div id="eVieja" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Bandera Patria Vieja &nbsp;&nbsp;1812 - 1814</h5>
+      <p class="w3-text-grey">Historia...</p><br>
+    </div>
+
+    <div id="eNueva" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Bandera Patria Nueva &nbsp;&nbsp;1814 - 1817</h5>
+      <p class="w3-text-grey">Historia...</p><br>
+    </div>
+    
+    <div id="eActual" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Bandera Actual &nbsp;&nbsp;1817 - Actualidad</h5>
+      <p class="w3-text-grey">Historia...</p><br>
+    </div>
+    <img src="imgs/logo.png" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>INFORMÁTICA - CFT TWK - 2018</a></p>
+</footer>
+<script>
+
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+<script src=""></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+</html>
